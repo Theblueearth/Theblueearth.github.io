@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first web page</title>
+  <title>CSS Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>My first web page</h1>
@@ -11,32 +12,35 @@
 
   <h2 id="why">Why this is</h2>
   <p>To learn HTML</p>
+  <ul>
+    <li>thats right</li>
+  </ul>
 
   <h2>Where to find the tutorial</h2>
   <p><a href="#why">Why</a></p>
 
-  <table>
-    <tr>
-        <td>Row 1, cell 1</td>
-        <td>Row 1, cell 2</td>
-        <td>Row 1, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, cell 1</td>
-        <td>Row 2, cell 2</td>
-        <td>Row 2, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, cell 1</td>
-        <td>Row 3, cell 2</td>
-        <td>Row 3, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 4, cell 1</td>
-        <td>Row 4, cell 2</td>
-        <td>Row 4, cell 3</td>
-    </tr>
-  </table>
+
+<form action="contactus.php" method="post">
+
+    <p>Name:</p>
+    <p><input type="text" name="name" value="Your name"></p>
+
+    <p>Species:</p>
+    <p><input name="species"></p>
+    <!-- remember: 'type="text"' isn't actually necessary -->
+
+    <p>Comments: </p>
+    <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
+
+    <p>Are you:</p>
+    <p><input type="radio" name="areyou" value="male"> Male</p>
+    <p><input type="radio" name="areyou" value="female"> Female</p>
+    <p><input type="radio" name="areyou" value="trans"> Trans</p>
+    <p><input type="radio" name="areyou" value="asexual"> Asexual</p>
+
+    <p><input type="submit"></p>
+
+</form>
 
 </body>
 </html>
